@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.buttons a {
+  /*display: inline-block;*/
+  /*text-align: center;*/
+}
+
+.buttons {
+  text-align: right;
+  /*ANI position: absolute;*/
+  /*ANI right: 0;*/
+  /*ANI transition: right 100ms ease;*/
+  
+}
+
+#direction.lhd .buttons {
+  text-align: left
+  /*ANI right: calc(100% - 104px);*/
+}
+
+#direction.rhd .buttons {
+  text-align: right;
+  /*ANI right: 0;*/
+}
