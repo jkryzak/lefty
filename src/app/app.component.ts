@@ -14,7 +14,7 @@ window.addEventListener('load', function(){
     var direction = document.getElementById('direction')
     var statusdiv = document.getElementById('statusdiv')
     var starty = 0
-    var dist = 0
+    // var dist = 0
  
     direction.addEventListener('touchstart', function(e){
         var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
@@ -36,7 +36,7 @@ window.addEventListener('load', function(){
     //     e.preventDefault()
     // }, false)
  
-    direction.addEventListener('touchend', function(e){
+    direction.addEventListener('touchmove', function(e){
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
         var mid = w/2
         var touchobj = e.changedTouches[0] // reference first touch point for this event
@@ -44,7 +44,7 @@ window.addEventListener('load', function(){
         var x = touchobj.clientX
         // xEnd.innerHTML = 'Final X: ' + x + 'px'
         // e.preventDefault()
-        if(x > mid && dist > 20){
+        if(x > mid && dist > 100){
           document.getElementById("direction").className = "rhd";
           //console.log(x + " is bigger than " + mid + " so go right");
           console.log("touched=" + x + " half=" + mid + " dist=" + dist)
@@ -56,9 +56,5 @@ window.addEventListener('load', function(){
         } else {
           console.log("relax, it's just a click")
         }
-        
     }, false)
-
-
-
 }, false)
