@@ -1,25 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
-
-
-.buttons a {
-  /*display: inline-block;*/
-  /*text-align: center;*/
+#statusdiv {
+  background: rgba(0,0,0,.9);
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  box-shadow: 1px 1px 1px 1px black;
+  padding-left: 5px;
 }
 
 .buttons {
   text-align: right;
-  /*ANI position: absolute;*/
-  /*ANI right: 0;*/
-  /*ANI transition: right 100ms ease;*/
-  
+  /* position: absolute;
+  right: 0;
+  transition: right 50ms ease; */
+}
+
+.buttons a {
+  /* display: inline-block;
+  width: 100px; */
 }
 
 #direction.lhd .buttons {
   text-align: left
-  /*ANI right: calc(100% - 104px);*/
+  /* right: calc(100% - 100px); */
 }
 
 #direction.rhd .buttons {
   text-align: right;
-  /*ANI right: 0;*/
+  /* right: 0; */
 }
+

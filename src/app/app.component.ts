@@ -42,13 +42,14 @@ window.addEventListener('load', function(){
         var touchobj = e.changedTouches[0] // reference first touch point for this event
         var dist = Math.abs(starty - touchobj.clientY)
         var x = touchobj.clientX
+        statusdiv.innerHTML = 'Distance: vertical distance traveled: ' + parseInt(dist) + 'px'
         // xEnd.innerHTML = 'Final X: ' + x + 'px'
         // e.preventDefault()
-        if(x > mid && dist > 100){
+        if(x > mid && dist > 75){
           document.getElementById("direction").className = "rhd";
           //console.log(x + " is bigger than " + mid + " so go right");
           console.log("touched=" + x + " half=" + mid + " dist=" + dist)
-        } else if(x < mid && dist > 20){
+        } else if(x < mid && dist > 75){
           document.getElementById("direction").className = "lhd";
           // console.log("travel " + dist + "px");
           // console.log(x + " is less than " + mid + " so go left"); 
