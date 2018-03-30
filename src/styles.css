@@ -16,6 +16,16 @@ body {
   font-family: monospace;
 }
 
+.midpoint {
+  border-left: 1px dotted #f2f2f2;
+  border-right: 1px dotted #f2f2f2;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: calc(50% - 2px);
+  right: calc(50% - 2px);
+}
+
 .buttons {
   text-align: right;
   /* position: absolute;
