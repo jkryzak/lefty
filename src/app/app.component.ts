@@ -42,7 +42,7 @@ window.addEventListener('load', function(){
         var touchobj = e.changedTouches[0] // reference first touch point for this event
         var dist = Math.abs(starty - touchobj.clientY)
         var x = touchobj.clientX
-        statusdiv.innerHTML = 'Distance: vertical distance traveled: ' + parseInt(dist) + 'px'
+        statusdiv.innerHTML = 'Vertical distance: ' + dist + 'px'
         // xEnd.innerHTML = 'Final X: ' + x + 'px'
         // e.preventDefault()
         if(x > mid && dist > 75){

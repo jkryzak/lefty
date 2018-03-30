@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Noto Serif', serif;
+}
+
 #statusdiv {
   background: rgba(0,0,0,.9);
   color: white;
@@ -9,6 +13,7 @@
   z-index: 10;
   box-shadow: 1px 1px 1px 1px black;
   padding-left: 5px;
+  font-family: monospace;
 }
 
 .buttons {
@@ -18,11 +23,10 @@
   transition: right 50ms ease; */
 }
 
-.buttons a {
-  /* display: inline-block;
-  width: 100px; */
-}
-
+/* .buttons a {
+  display: inline-block;
+  width: 100px; 
+}*/
 #direction.lhd .buttons {
   text-align: left
   /* right: calc(100% - 100px); */
