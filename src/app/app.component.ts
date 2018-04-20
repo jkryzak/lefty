@@ -9,6 +9,12 @@ export class AppComponent {
   title = 'app';
 }
 
+
+var side = localStorage.hand
+if (side == "left") {
+  document.getElementById("direction").className = "lhd";
+}
+
 window.addEventListener('load', function(){
  
     var direction = document.getElementById('direction')
@@ -47,10 +53,12 @@ window.addEventListener('load', function(){
         // e.preventDefault()
         if(x > mid && dist > 75){
           document.getElementById("direction").className = "rhd";
+          localStorage.setItem('hand', 'right');
           //console.log(x + " is bigger than " + mid + " so go right");
           console.log("touched=" + x + " half=" + mid + " dist=" + dist)
         } else if(x < mid && dist > 75){
           document.getElementById("direction").className = "lhd";
+          localStorage.setItem('hand', 'left');
           // console.log("travel " + dist + "px");
           // console.log(x + " is less than " + mid + " so go left"); 
           console.log("touched=" + x + " half=" + mid + " dist=" + dist)
