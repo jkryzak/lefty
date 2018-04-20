@@ -53,11 +53,11 @@ window.addEventListener('load', function(){
         // e.preventDefault()
         if(x > mid && dist > 75){
           document.getElementById("direction").className = "rhd";
-          sessionStorage.setItem('hand', 'right');
+          localStorage.setItem('hand', 'right');
 
         } else if(x < mid && dist > 75){
           document.getElementById("direction").className = "lhd";
-          sessionStorage.setItem('hand', 'left');
+          localStorage.setItem('hand', 'left');
 
         } else {
           console.log("relax, it's just a click")
